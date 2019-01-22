@@ -46,4 +46,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="ambient_display_category_battery" >
+
+        <SwitchPreference 
+            android:key="ambient_battery_percent" 
+            android:title="@string/ambient_battery_percent_title" 
+            android:summary="@string/ambient_battery_percent_summary" 
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

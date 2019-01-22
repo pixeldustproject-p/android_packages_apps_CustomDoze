@@ -32,4 +32,8 @@
   <string name="aod_setting_title">Immer aktiviert</string>
   <string name="aod_setting_summary">Uhrzeit, Benachrichtigungssymbole und andere Informationen anzeigen. Erhöhter Akkuverbrauch.</string>
 
+  <!-- Ambient display battery percentage --> 
+  <string name="ambient_battery_percent_title">Akkuladestand am unteren Rand anzeigen</string> 
+  <string name="ambient_battery_percent_summary">Akkuladestand als Prozentwert auf dem Inaktivitätsdisplay anzeigen</string>
+
 </resources>

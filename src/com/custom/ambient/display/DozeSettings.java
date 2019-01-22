@@ -33,6 +33,7 @@ public class DozeSettings extends PreferenceActivity implements OnPreferenceChan
     private SwitchPreference mAmbientDisplayPreference;
     private SwitchPreference mHandwavePreference;
     private SwitchPreference mPocketPreference;
+    private SwitchPreference mBatteryPreference;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,6 +69,11 @@ public class DozeSettings extends PreferenceActivity implements OnPreferenceChan
             (SwitchPreference) findPreference(Utils.GESTURE_POCKET_KEY);
         mPocketPreference.setChecked(Utils.pocketGestureEnabled(mContext));
         mPocketPreference.setOnPreferenceChangeListener(this);
+
+        mBatteryPreference =
+            (SwitchPreference) findPreference(Utils.AMBIENT_BATTERY_KEY);
+        mBatteryPreference.setChecked(Utils.isAmbientBatteryEnabled(mContext));
+        mBatteryPreference.setOnPreferenceChangeListener(this);
 
         if (mAoDPreference == null) return;
         setPrefs();
@@ -108,6 +114,10 @@ public class DozeSettings extends PreferenceActivity implements OnPreferenceChan
         } else if (Utils.GESTURE_POCKET_KEY.equals(key)) {
             mPocketPreference.setChecked(value);
             Utils.enablePocketMode(value, mContext);
+            return true;
+        } else if (Utils.AMBIENT_BATTERY_KEY.equals(key)) {
+            mBatteryPreference.setChecked(value);
+            Utils.enableAmbientBattery(value, mContext);
             return true;
         }
         return false;

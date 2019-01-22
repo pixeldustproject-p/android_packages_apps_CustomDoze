@@ -39,6 +39,7 @@ public final class Utils {
     protected static final String AMBIENT_DISPLAY_KEY = "ambient_display";
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
+    protected static final String AMBIENT_BATTERY_KEY = "ambient_battery_percent";
 
     protected static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
@@ -100,6 +101,11 @@ public final class Utils {
                 Settings.System.CUSTOM_AMBIENT_POCKETMODE_GESTURE, 0) != 0;
     }
 
+    protected static boolean isAmbientBatteryEnabled(Context context) {
+        return Settings.System.getInt(context.getContentResolver(),
+                Settings.System.AMBIENT_BATTERY_PERCENT, 0) != 0;
+    }
+
     protected static boolean enableDoze(boolean enable, Context context) {
         boolean enabled = Settings.Secure.putInt(context.getContentResolver(),
                 Settings.Secure.DOZE_ENABLED, enable ? 1 : 0);
@@ -118,6 +124,12 @@ public final class Utils {
         boolean enabled = Settings.System.putInt(context.getContentResolver(),
                 Settings.System.CUSTOM_AMBIENT_POCKETMODE_GESTURE, enable ? 1 : 0);
         manageService(context);
+        return enabled;
+    }
+
+    protected static boolean enableAmbientBattery(boolean enable, Context context) {
+        boolean enabled = Settings.System.putInt(context.getContentResolver(),
+                Settings.System.AMBIENT_BATTERY_PERCENT, enable ? 1 : 0);
         return enabled;
     }
 
