@@ -13,7 +13,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="ambient_display_title">Ambient display</string>
+    <string name="ambient_display_title">New notifications</string>
     <string name="ambient_display_summary">Wake screen when you receive notifications</string>
 
     <!-- Tilt sensor (not supported) -->
@@ -28,6 +28,7 @@
     <string name="pocket_gesture_title">Pocket</string>
     <string name="pocket_gesture_summary">Pulse notifications on removal from pocket</string>
 
-    <string name="aod_setting_title">Always ON Ambient</string>
-    <string name="aod_setting_summary">Always show Ambient Display when sleeping</string>
+    <string name="aod_setting_title">Always on</string>
+    <string name="aod_setting_summary">Show time, notification icons and other info. Increased battery usage.</string>
+
 </resources>
