@@ -14,7 +14,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/ambient_display_screen_title">
 
     <SwitchPreference
         android:key="always_on_ambient"
@@ -30,7 +32,7 @@
 
     <PreferenceCategory
         android:key="proximity_sensor"
-        android:title="@string/priximity_sensor_title" >
+        android:title="@string/proximity_sensor_title" >
 
         <SwitchPreference
             android:key="gesture_hand_wave"
