@@ -48,4 +48,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="ambient_advanced"
+        android:title="@string/ambient_advanced_title" >
+
+        <SwitchPreference 
+            android:key="ambient_battery_percent" 
+            android:title="@string/ambient_battery_percent_title" 
+            android:summary="@string/ambient_battery_percent_summary" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

@@ -32,4 +32,9 @@
     <string name="aod_setting_title">Always on</string>
     <string name="aod_setting_summary">Show time, notification icons and other info. Increased battery usage.</string>
 
+    <!-- Ambient display battery percentage -->
+    <string name="ambient_advanced_title">Advanced</string>
+    <string name="ambient_battery_percent_title">Battery level on bottom</string> 
+    <string name="ambient_battery_percent_summary">Enable to show battery percent while dozing</string>
+
 </resources>
