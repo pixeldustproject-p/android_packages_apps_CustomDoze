@@ -38,4 +38,15 @@
   <string name="ambient_battery_percent_title">Akkuladestand am unteren Rand anzeigen</string> 
   <string name="ambient_battery_percent_summary">Den Akkuladestand in Prozent auf dem Inaktivitätsdisplay anzeigen</string>
 
+  <string name="doze_brightness_title">Helligkeit des Inaktivitätsdisplay</string>
+  <string name="doze_brightness_summary">Helligkeitswert für das Inaktivitätsdisplay einstellen</string>
+  <string name="night_brightness_value">Nachthelligkeit</string>
+  <string name="low_brightness_value">Schwache Lichthelligkeit</string>
+  <string name="high_brightness_value">Mittlere Lichthelligkeit</string>
+  <string name="sun_brightness_value">Sonnenlichthelligkeit</string>
+
+  <string name="reset_hidden_apps">Alles zurücksetzen</string>
+
+  <string name="footer_info">Falls das Inaktivitätsdisplay IMMER aktiviert ist, wird die Helligkeit entsprechend den Hardware- und PowerManager-Spezifikationen für AoD neu berechnet. Die obigen Werte dürfen daher nicht als absolute Werte angesehen werden.</string>
+
 </resources>

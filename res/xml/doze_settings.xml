@@ -57,6 +57,16 @@
             android:title="@string/ambient_battery_percent_title" 
             android:summary="@string/ambient_battery_percent_summary" />
 
+        <Preference
+            android:key="doze_brightness"
+            android:title="@string/doze_brightness_title"
+            android:summary="@string/doze_brightness_summary">
+        <intent
+            android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
+            android:targetPackage="com.custom.ambient.display"
+            android:targetClass="com.custom.ambient.display.DozeBrightness" />
+        </Preference>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
