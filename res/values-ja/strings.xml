@@ -46,6 +46,6 @@
 
     <string name="reset_hidden_apps">全てリセット</string>
 
-    <string name="footer_info">常に有効が有効になっていると、明るさはハードウェア仕様に従うように再計算されるので、上記の値を絶対値として考慮しないで下さい。</string>
+    <string name="footer_info">常に表示が有効になっていると、明るさはハードウェア仕様に従うように再計算されるので、上記の値を絶対値として考慮しないで下さい。</string>
 
 </resources>
